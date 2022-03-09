@@ -1,29 +1,8 @@
 import http from 'http';
 import fs from 'fs';
 import axios from 'axios';
-// import express from 'express'
-// import { dirname } from 'path';
 import path  from 'path';
 
-
-// const __dirname = dirname('style.css');
-
-// const app = express();
-// app.use(express.favicon("G:/Java(script) by thapa/Dynamic weather/favicon.ico")); 
-// app.use(express.static(path.join(__dirname, 'dyanamin weather')));
-
-
-// const replaceVal = (tempVal, orgVal)=>{
-//     let temperatur = tempVal.replace("{%tempVal%}", orgVal.data.main.temp)
-//      temperatur = temperatur.replace("{%tempMin%}", orgVal.data.main.temp_min)
-//      temperatur = temperatur.replace("{%tempMax%}", orgVal.data.main.temp_max)
-//      temperatur = temperatur.replace("{%location%}", orgVal.name)
-//      temperatur = temperatur.replace("{%country%}", orgVal.data.sys.country)
-// //    console.log(temperatur);
-//     return temperatur
-// }
-
-// console.log(replaceVal);
 
 const server = http.createServer((req, res)=>{
     let filePath = '.' + req.url;
